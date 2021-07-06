@@ -21,18 +21,19 @@ const tsPlugin = ts({
   // eslint
 const esPlugin = eslint({
 	throwOnError: true,
-	include: ['components/**/*.tsx'],
+	include: ['./src/components/**/*.tsx'],
 	exclude: ['node_modules/**', 'lib/**','es/**']
   })
 
 export default [  
 	{
-		input: 'components/index.tsx',
+		input: './src/components/index.tsx',
 		external: ['ms','react','react-dom'],
-		preserveModules:true,
+		 preserveModules:true,
+		// exclude:["stories"],
 		output: [
-			{ dir: './lib/', format: 'cjs',exports:'auto' },
-			{ dir:  './es/', format: 'es' }
+			// { dir: './lib/components', format: 'cjs',exports:'auto' },
+			{ dir:  './es', format: 'es' }
 			// { file: './lib/index.js', format: 'cjs' },
 			// { file:  './es/index.js', format: 'es' }
 		],

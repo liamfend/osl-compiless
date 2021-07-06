@@ -1,7 +1,7 @@
  
 import React, { ReactElement } from 'react'
 
-export interface IAlert {
+interface IAlert {
     msg:string
 }
 
