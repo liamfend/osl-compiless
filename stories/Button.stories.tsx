@@ -16,4 +16,7 @@ LoggedIn.args = {
 };
 
 export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+LoggedOut.args = {
+  msg:'login out!',
+  size:333
+};

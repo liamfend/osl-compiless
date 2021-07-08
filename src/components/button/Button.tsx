@@ -3,12 +3,14 @@ import React, { ReactElement } from 'react'
 
 export interface IButton {
   msg: string
+  size: Number
 }
 
-const Button = ({ msg }: IButton): ReactElement => {
+const Button = ({ msg,size }: IButton): ReactElement => {
   return (
     <div>
       this is button!{msg}
+     size is: {size}
     </div>
   )
 };
