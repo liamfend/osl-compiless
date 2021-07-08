@@ -6,13 +6,13 @@ export interface IButton {
   size: Number
 }
 
-const Button = ({ msg,size }: IButton): ReactElement => {
+const Button = ({ msg, size }: IButton): ReactElement => {
   return (
     <div>
       this is button!{msg}
      size is: {size}
     </div>
   )
-};
+}
 
 export default Button
